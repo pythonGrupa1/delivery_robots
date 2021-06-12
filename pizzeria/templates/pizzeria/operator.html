@@ -1,10 +1,96 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'pizzeria/base.html' %}
+{% block content %}
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <link rel="stylesheet" href="pizzeria/static/pizzeria/extra.css">
 </head>
-<body>
+    <main>
 
-</body>
-</html>
+        <section>
+
+            <div class="container header">
+
+                <header class="opening">
+                    <h1>Robots management panel</h1>
+
+                </header>
+
+            </div>
+        </section>
+
+        <section>
+            <div class="container ListView">
+                <div class="oneline">
+                    <h1>List view</h1>
+                </div>
+            <table class="content-table">
+                <thead>
+                    <tr>
+                        <th>Order number</th>
+                        <th>Address</th>
+                        <th>Contains</th>
+                        <th>Estimated time</th>
+                        <th>Operator</th>
+                        <th>Robot and confirmation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2137</td>
+                        <td>NoNameCity st.Fahrenheit nr 44</td>
+                        <td>Margarita</td>
+                        <td>00:25:00</td>
+                        <td>Brayan</td>
+                        <td>
+                            <form>
+                                <select>
+                                    <option>Robot_001</option>
+                                    <option>Robot_002</option>
+                                    <option>Robot_003</option>
+                                    <option>Robot_004</option>
+                                    <option>Robot_005</option>
+                                </select>
+                                <input type="submit" value="Activate">
+                            </form>
+                    </tr>
+                    <tr>
+                        <td>3721</td>
+                        <td>NoNameCity st.Campbell nr 88</td>
+                        <td>Capricciosa</td>
+                        <td>00:17:00</td>
+                        <td>Tom</td>
+                        <td>
+                            <select>
+                                <option>Robot_001</option>
+                                <option>Robot_002</option>
+                                <option>Robot_003</option>
+                                <option>Robot_004</option>
+                                <option>Robot_005</option>
+                            </select>
+                            <input type="submit" value="Activate">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>8888</td>
+                        <td>NoNameCity st. Newton nr 14</td>
+                        <td>Polo</td>
+                        <td>00:30:00</td>
+                        <td>Roger</td>
+                        <td>
+                            <select>
+                                <option>Robot_001</option>
+                                <option>Robot_002</option>
+                                <option>Robot_003</option>
+                                <option>Robot_004</option>
+                                <option>Robot_005</option>
+                            </select>
+                            <input type="submit" value="Activate">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            </div>
+        </section>
+
+    </main>
+{% endblock content %}
