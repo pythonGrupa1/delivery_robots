@@ -7,3 +7,7 @@ def home(request):
 
 def about(request):
     return render(request, 'pizzeria/about.html', {'title': 'O nas'})
+
+
+def operator(request):
+    return render(request, 'pizzeria/operator.html')
