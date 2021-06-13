@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
+#TODO adding multiple user types from decorators and models
 #from .decorators import user_required, employee_required
 from .forms import UserRegisterForm
 
