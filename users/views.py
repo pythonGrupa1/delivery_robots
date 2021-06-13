@@ -24,6 +24,11 @@ def register(request):
 def logged_user(request):
     return render(request, 'users/logged_user.html')
 
+@login_required()
+#@user_required
+def cart(request):
+    return render(request, 'users/cart.html')
+
 
 @login_required()
 #@employee_required
