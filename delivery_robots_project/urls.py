@@ -27,6 +27,7 @@ urlpatterns = [
     path('logout/', auth_views.LogoutView.as_view(template_name='users/logout.html'), name='logout'),
     path('logged_employee/', user_views.logged_employee, name='logged_employee'),
     path('logged_user/', user_views.logged_user, name='logged_user'),
-    path('orders/', user_views.orders, name='employee_orders'),
+    path('orders/', user_views.orders, name='orders'),
+    path('cart/', user_views.cart, name='cart'),
     path('', include('pizzeria.urls')),
 ]

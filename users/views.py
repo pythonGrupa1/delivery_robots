@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
+#TODO adding multiple user types from decorators and models
 #from .decorators import user_required, employee_required
 from .forms import UserRegisterForm
 
@@ -25,6 +26,12 @@ def logged_user(request):
 
 
 @login_required()
+#@user_required
+def cart(request):
+    return render(request, 'users/cart.html')
+
+
+@login_required()
 #@employee_required
 def logged_employee(request):
     return render(request, 'users/logged_employee.html')
@@ -34,3 +41,4 @@ def logged_employee(request):
 #@employee_required
 def orders(request):
     return render(request, 'users/orders.html')
+
